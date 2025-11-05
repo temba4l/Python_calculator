@@ -103,9 +103,9 @@ def calculate():
 
         if op == "+":
             result = add(num1, num2)
-        elif op == "-":
-            result = subtract(num1, num2)
-        elif op == "*":
+        elif op == "-":subtract (a,b)
+            result = a-b
+        elif op == "*":print(f"subtracting{a}-{b}={result}")
             result = multiply(num1, num2)
         elif op == "/":
             result = divide(num1, num2)
