@@ -17,7 +17,10 @@ def subtract(a, b):
     return a - b
 
 def multiply(a, b):
-    return a * b
+    result = a * b
+    if a == 0 or b == 0:
+        print("Multiplication by zero detected.")
+    return result
 
 def divide(a, b):
     if b == 0:
