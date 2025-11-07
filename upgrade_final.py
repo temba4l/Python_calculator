@@ -64,14 +64,11 @@ def memory_subtract():
         messagebox.showerror("Error", "Please enter a valid number!")
 
 def memory_recall():
-    entry_num1.delete(0, tk.END)
-    entry_num1.insert(0, str(memory))
-
-def memory_clear():
-    global memory
-    memory = 0
-    messagebox.showinfo("Memory", "Memory cleared.")
-
+    if memory == 0:
+        messagebox.showwarning("Memory", "Memory is empty!")
+    else:
+        entry_num1.delete(0, tk.END)
+        entry_num1.insert(0, str(memory))
 # -----------------------------
 # Part 3: History and Result Handling
 # -----------------------------
