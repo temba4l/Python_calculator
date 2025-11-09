@@ -24,12 +24,17 @@ def multiply(a, b):
     if a == 0 or b == 0:
         print("Multiplication by zero detected.")
     return result
-
 def divide(a, b):
     if b == 0:
         messagebox.showerror("Error", "Division by zero!")
         return None
-    return a / b
+    result = a / b
+    return round(result, 5)
+
+    
+
+        
+
 
 def modulus(a, b):
     if b == 0:
