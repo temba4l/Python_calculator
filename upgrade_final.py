@@ -187,7 +187,5 @@ prev_result_button.grid(row=6, column=0, columnspan=2, pady=5)
 
 # Result label
 result_label = tk.Label(root, text="Result: ")
-result_label.grid(row=7, column=0, columnspan=2)
-
-# Run the application
+result_label.grid(row=7, column=0, columnspan=print("Calculator App Started Successfully - Team 15 Edition")
 root.mainloop()
