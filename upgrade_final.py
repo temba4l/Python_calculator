@@ -1,4 +1,4 @@
-import tkinter as tk
+I'mimport tkinter as tk
 from tkinter import messagebox
 import math
 
@@ -15,10 +15,10 @@ def add(a, b):
         messagebox.showerror("Error", "Inputs must be numbers!")
         return None
     return a + b
-
 def subtract(a, b):
-    return a - b
-
+    result = a - b
+    print(f"Subtracting {a} - {b} = {result}")
+    return result
 def multiply(a, b):
     result = a * b
     if a == 0 or b == 0:
