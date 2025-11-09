@@ -11,6 +11,9 @@ history = []
 previous_result = None
 
 def add(a, b):
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        messagebox.showerror("Error", "Inputs must be numbers!")
+        return None
     return a + b
 
 def subtract(a, b):
