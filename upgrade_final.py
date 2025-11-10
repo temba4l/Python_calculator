@@ -162,7 +162,10 @@ entry_num2.grid(row=1, column=1)
 # Operation selection
 tk.Label(root, text="Operation:").grid(row=2, column=0)
 operation_var = tk.StringVar(value="+")
-operations = ["+", "-", "*", "/", "%", "^", "sqrt"]
+operations_operations = ["+", "-", "*", "/", "%", "^", "sqrt", "cbrt"]
+
+version_label = tk.Label(root, text=f"Calculator {APP_VERSION}", fg="blue")
+version_label.grid(row=8, column=0, columnspan=2, pady=5)
 operation_menu = tk.OptionMenu(root, operation_var, *operations)
 operation_menu.grid(row=2, column=1)
 
