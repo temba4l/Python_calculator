@@ -1,4 +1,5 @@
-I'mimport tkinter as tk
+APP_VERSION= "1.0"
+import tkinter as tk
 from tkinter import messagebox
 import math
 
@@ -113,9 +114,9 @@ def calculate():
 
         if op == "+":
             result = add(num1, num2)
-        elif op == "-":subtract (a,b)
-            result = a-b
-        elif op == "*":print(f"subtracting{a}-{b}={result}")
+        elif op == "-":
+            result = subtract (num1, num2)
+        elif op == "*":
             result = multiply(num1, num2)
         elif op == "/":
             result = divide(num1, num2)
@@ -162,7 +163,7 @@ entry_num2.grid(row=1, column=1)
 # Operation selection
 tk.Label(root, text="Operation:").grid(row=2, column=0)
 operation_var = tk.StringVar(value="+")
-operations_operations = ["+", "-", "*", "/", "%", "^", "sqrt", "cbrt"]
+operations = ["+", "-", "*", "/", "%", "^", "sqrt", "cbrt"]
 
 version_label = tk.Label(root, text=f"Calculator {APP_VERSION}", fg="blue")
 version_label.grid(row=8, column=0, columnspan=2, pady=5)
@@ -194,5 +195,6 @@ prev_result_button.grid(row=6, column=0, columnspan=2, pady=5)
 
 # Result label
 result_label = tk.Label(root, text="Result: ")
-result_label.grid(row=7, column=0, columnspan=print("Calculator App Started Successfully - Team 15 Edition")
+print("Calculator App Started Successfully- Team 15 Edition")
+result_label.grid(row=7, column=0, columnspan=2)
 root.mainloop()
