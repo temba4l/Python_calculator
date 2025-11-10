@@ -29,7 +29,10 @@ def divide(a, b):
     if b == 0:
         messagebox.showerror("Error", "Division by zero!")
         return None
-    return a / b
+    result = a / b
+    return round(result, 5)
+        
+    
 
 def modulus(a, b):
     if b == 0:
