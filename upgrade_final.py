@@ -138,10 +138,8 @@ def calculate():
     except ValueError:
         messagebox.showerror("Error", "Please enter valid numbers!")
 
-def use_previous_result():
-    if previous_result is not None:
-        entry_num1.delete(0, tk.END)
-        entry_num1.insert(0, str(previous_result))
+def else:
+    messagebox.showinfo("Info", "No previous result available!")
 
 # -----------------------------
 # Part 5: GUI Setup
