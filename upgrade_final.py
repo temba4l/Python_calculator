@@ -6,9 +6,7 @@ import math
 # Part 1: Calculator Functions
 # -----------------------------
 
-memory = 0
-history = []
-previous_result = None
+HISTORY_LIMIT = 10  # Keep only 10 most recent history items
 
 def add(a, b):
     if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
