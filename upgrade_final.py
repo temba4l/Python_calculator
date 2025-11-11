@@ -23,7 +23,7 @@ def subtract(a, b):
     return result
 def multiply(a, b):
     result = a * b
-    if a == 0 or b == 0:
+    if 0 in (a, b):
         print("Multiplication by zero detected.")
     return result
 
