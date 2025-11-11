@@ -17,7 +17,9 @@ def add(a, b):
     return a + b
 
 def subtract(a, b):
-    return a - b
+    result = a - b
+    print(f"Subtracting {a} - {b} = {result}")
+    return result
 
 def multiply(a, b):
     result = a * b
