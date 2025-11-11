@@ -86,20 +86,10 @@ def memory_clear():
 
 def update_history(num1, operation, num2, result):
     history.append(f"{num1} {operation} {num2} = {result}")
-
-def display_history():
-    hist_window = tk.Toplevel(root)
-    hist_window.title("Calculation History")
-    if not history:
-        tk.Label(hist_window, text="No calculations yet.").pack()
-    else:
-        for calc in history:
-            tk.Label(hist_window, text=calc).pack(anchor="w")
-
-def clear_history():
-    global history
-    history.clear()
-    messagebox.showinfo("Info", "History cleared.")
+def update_history(num1, operation, num2, result):
+    history.append(f"{num1} {operation} {num2} = {result}")
+    if len(history) > HISTORY_LIMIT:
+        history.pop(0)
 
 # -----------------------------
 # Part 4: GUI and Calculation Logic
