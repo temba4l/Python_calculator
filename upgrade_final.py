@@ -82,24 +82,14 @@ def memory_clear():
 
 # -----------------------------
 # Part 3: History and Result Handling
-# -----------------------------
 
 def update_history(num1, operation, num2, result):
     history.append(f"{num1} {operation} {num2} = {result}")
+[05/11, 5:45 PM] Temba: def update_history(num1, operation, num2, result):
+    history.append(f"{num1} {operation} {num2} = {result}")
+    if len(history) > HISTORY_LIMIT:
+        history.pop(0)
 
-def display_history():
-    hist_window = tk.Toplevel(root)
-    hist_window.title("Calculation History")
-    if not history:
-        tk.Label(hist_window, text="No calculations yet.").pack()
-    else:
-        for calc in history:
-            tk.Label(hist_window, text=calc).pack(anchor="w")
-
-def clear_history():
-    global history
-    history.clear()
-    messagebox.showinfo("Info", "History cleared.")
 
 # -----------------------------
 # Part 4: GUI and Calculation Logic
