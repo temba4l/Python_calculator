@@ -23,16 +23,13 @@ def multiply(a, b):
     result = a * b
     if a == 0 or b == 0:
         print("Multiplication by zero detected.")
-    return result
+    return result   
 def divide(a, b):
     if b == 0:
         messagebox.showerror("Error", "Division by zero!")
         return None
     result = a / b
     return round(result, 5)
-
-    
-
         
 
 
