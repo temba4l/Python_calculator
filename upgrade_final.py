@@ -19,7 +19,7 @@ def add(a, b):
 
 def subtract(a, b):
     result = a - b
-    print(f"Subtracting {a} - {b} = {result}")
+    print("Subtracting {} - {} = {}".format(a, b, results))
     return result
 def multiply(a, b):
     result = a * b
