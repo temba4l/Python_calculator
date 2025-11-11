@@ -42,14 +42,10 @@ def modulus(a, b):
         return None
     return a % b
 
-def power(a, b):
-    return a ** b
 
-def sqrt(a):
-    if a < 0:
-        messagebox.showerror("Error", "Square root of negative number!")
-        return None
-    return math.sqrt(a)
+def cbrt(a):
+    return round(a ** (1/3), 5)
+
 
 # -----------------------------
 # Part 2: Memory Functions
@@ -57,7 +53,6 @@ def sqrt(a):
 
 def memory_add():
     global memory
-    try:
         memory += float(entry_num1.get())
         messagebox.showinfo("Memory", f"Added to memory: {memory}")
     except ValueError:
